@@ -1,0 +1,20 @@
+#map {
+    width:80%;
+}
+ul{
+    list-style-type: none;
+}
+.ti-map::before{
+    content:"🗺️";}
+.ti-mobile::before{
+    content:"📱"
+}
+.ti-envelope::before{
+    content: "📨"
+}
+.ti-home::before{
+    content: "🏠"
+}
+.icon-twitter-with-circle::before{
+    content:"\ea7b"
+}

@@ -1,0 +1,619 @@
+
+body{
+    color:black;
+    background: white;
+    /* font-family: OCR A Std, monospace; */
+    background-image: url("http://gameranx.com/wp-content/uploads/2016/03/Firewatch-4K-Wallpaper-1.jpg");
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
+}
+body {
+  background-color:#f2f2f2;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 0px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  /* padding: 0 16px; */
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  /* width: 100%; */
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  /* width: 100%; */
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  /* border: none; */
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ul {
+  list-style-type:none;
+  }
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  /* border: none; */
+  /* width: 100%; */
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: rgb(36, 7, 105);
+  color: #f1f1f1;
+  
+  z-index: 99;
+}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.inline-block{
+  display: inline-block;
+}
+/* video{
+  height: 150%;
+  width: 100%;
+  position: absolute;
+} */
+.date-bar{
+  display: flex;
+  flex-direction: row ; 
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.spacebet{
+  justify-content: space-between;
+}
+/* input {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.5rem 1rem;
+} */
+ header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    height: 81%;
+  } 
+  
+  /* video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }  */
+  .container {
+    position: relative;
+    z-index: 0;
+  }
+  
+  /* header {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    /* opacity: 0.5; */
+    /* z-index: 99;
+  } */
+.navbar{
+  opacity:0.5;
+}
+#testimonial {
+  background: #FF5722;
+  float: left;
+  width: 100%;
+  color: #52565b;
+}
+.card{
+  display: inline-block;
+  margin: 38px;
+  transition: transform 1s ease;
+}
+.record_wrap {
+  width:90%;
+  margin:100px auto;
+  display:flex;
+  justify-content:space-between;
+}
+
+.record {
+  position:relative;
+  width:30%;
+  height:20vw;
+  overflow:hidden;
+  // border:2px solid #ccc;
+  @include shadow(1);
+  background-color:#fff;
+  cursor:pointer;
+  transition: box-shadow 300ms;
+  &:hover {
+    @include shadow(2);
+  }
+}
+
+.record-arrow {
+  position:absolute;
+  padding:3%;
+  img {
+    width:8%;
+    height:8%;
+  }
+  background-image:url("http://www.portalguard.com/images/icons/right-arrow.png");
+  transform:translateX(75%);
+  opacity:0;
+  transition:all 300ms ease-in-out;
+}
+
+.record:hover .record-arrow {
+  transform:translateX(85%);
+  opacity:1;
+}
+
+.record-display {
+  width:100%;
+  height:100%;
+  top:0;
+  background-image:url("https://www.collinet-sieges.com/img/products/thumbnail/1095-tete-de-lit-lausanne-1.jpg");
+  background-size:cover;
+  background-position:center center;
+}
+
+.record:hover .record-display {
+  height:20%;
+  @include shadow(1);
+}
+
+.record-desc {
+  margin:20px 0 0 10px;
+  h1 {
+    margin:5px 0;
+    font-size:1.3em;
+    font-weight:700;
+  }
+  p {
+    font-size:0.75em;
+    line-height:1.4em;
+    color:#666;
+  }
+  opacity:0;
+  transition: opacity 400ms ease-in-out 190ms ;
+}
+
+#record1 {
+  transition:height 700ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+#record2 {
+  transition:height 500ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+#record3 {
+  transition:height 300ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+
+.record:hover .record-desc {
+  opacity:1;
+}
+
+.tagline {
+  margin:50px 0;
+  text-align:center;
+  color:green;
+}
+.div1 {
+  width: 100px;
+  height: 150px;
+  background: #47b1db;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 0s, height 1s;
+}
+
+.div1:hover {
+  width: 300px;
+  height: 300px;
+}
+  @media (max-width: 1300px){
+     }
+    @media (max-width: 1000px){
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 20px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        z-index: 2;
+      }
+      
+      .flip-card-back {
+        background-color: #47b1db;
+        color: rgb(0, 0, 0);
+        transform: rotateY(180deg);
+        z-index: 1;
+      }
+         }
+         
+  
+
+
+         .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+          margin: 20px;
+        }
+        
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+          z-index: 2;
+        }
+        
+        .flip-card-back {
+          background-color: #ffffff;
+          color: rgb(0, 0, 0);
+          transform: rotateY(180deg);
+          z-index: 1;
+        }
+        .icon-bar {
+          position: fixed;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          z-index: -5;
+        }
+        
+        /* Style the icon bar links */
+        .icon-bar a {
+          display: block;
+          text-align: center;
+          padding: 16px;
+          transition: all 0.3s ease;
+          color: white;
+          font-size: 20px;
+        }
+        
+        /* Style the social media icons with color, if you want */
+        .icon-bar a:hover {
+          background-color: #000;
+        }
+        
+        .facebook {
+          background: #3B5998;
+          color: white;
+        }
+        
+        .twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        
+        .google {
+          background: #dd4b39;
+          color: white;
+        }
+        
+        .linkedin {
+          background: #007bb5;
+          color: white;
+        }
+        
+        .youtube {
+          background: #bb0000;
+          color: white;
+        }
+
